@@ -26,4 +26,12 @@ static Scanner sc = new Scanner(System.in);
         contador ++;
 
     }
+
+    public static  void mostrarEstudiantes(){
+        for (int i = 0; i < contador; i++){
+            System.out.println(nombres[i] + "-" + edades[i] + "-" + notas[i]);
+        }
+    }
+
+    
 }
