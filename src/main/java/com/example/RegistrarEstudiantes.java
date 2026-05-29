@@ -62,4 +62,14 @@ static Scanner sc = new Scanner(System.in);
             System.out.println("Registro no encontrado");
         }
     }
+
+    public static void calcularPromedio(){
+        double suma = 0;
+        for (int i = 0; i < contador; i++){
+            suma += notas[i];
+        }
+        
+        double promedio = suma / contador;
+        System.out.println("Promedio : "+ promedio);
+    }
 }
