@@ -15,6 +15,14 @@ static Scanner sc = new Scanner(System.in);
 
 
     }
+    public static void mostrarMenu(){
+        System.out.println(" \n ***Menu Principal ***");
+        System.out.println("1. Registrar estudiante");
+        System.out.println("3. Mostrar estudiante");
+        System.out.println("4. Promedio de notas");
+        System.out.println("5. Salir del  sistema");
+    }
+
 
     public static void registrarEstudiante(){
         System.out.println("Por favor ingresa el nombre: ");
