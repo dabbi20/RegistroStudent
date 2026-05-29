@@ -11,7 +11,37 @@ static int contador = 0;
 static Scanner sc = new Scanner(System.in);
 
     static void main(String[] args) {
+int opcion;
+do {
+mostrarMenu();
+opcion = sc.nextInt();
+sc.nextLine();
+switch (opcion){
+    case  1:
+        registrarEstudiante();
+        break;
+    case 2:
+        mostrarEstudiantes();
+        break;
+    case 3:
+        buscarEstudiante();
+        break;
 
+    case 4:
+        calcularPromedio();
+        break;
+
+    case 5:
+       System.out.println("Saliendo del sistema");
+        break;
+
+    default:
+        System.out.println("Opcion invalida");
+        break;
+}
+
+
+}while (opcion != 5);
 
 
     }
@@ -68,7 +98,7 @@ static Scanner sc = new Scanner(System.in);
         for (int i = 0; i < contador; i++){
             suma += notas[i];
         }
-        
+
         double promedio = suma / contador;
         System.out.println("Promedio : "+ promedio);
     }
