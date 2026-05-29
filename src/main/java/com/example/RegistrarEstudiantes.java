@@ -12,6 +12,8 @@ static Scanner sc = new Scanner(System.in);
 
     static void main(String[] args) {
 
+
+
     }
 
     public static void registrarEstudiante(){
@@ -33,5 +35,23 @@ static Scanner sc = new Scanner(System.in);
         }
     }
 
-    
+    public static void  buscarEstudiante(){
+        System.out.println("Nombre a bucar: ");
+        String nombreBuscar = sc.nextLine();
+
+        boolean encontrado = false;
+
+        for (int i = 0; i < contador; i++){
+            if (nombres[i].equalsIgnoreCase(nombreBuscar)){
+                System.out.println("Registro encontrado");
+                System.out.println(nombres[i]);
+                encontrado = true;
+
+            }
+        }
+
+        if (!encontrado){
+            System.out.println("Registro no encontrado");
+        }
+    }
 }
