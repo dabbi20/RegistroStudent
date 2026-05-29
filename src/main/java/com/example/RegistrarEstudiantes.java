@@ -13,4 +13,17 @@ static Scanner sc = new Scanner(System.in);
     static void main(String[] args) {
 
     }
+
+    public static void registrarEstudiante(){
+        System.out.println("Por favor ingresa el nombre: ");
+        nombres[contador] = sc.nextLine();
+
+        System.out.println("Por favor ingresa la edad: ");
+        edades[contador] = sc.nextInt();
+        System.out.println("Por favor ingresa la calificacion: ");
+        notas[contador] = sc.nextDouble();
+
+        contador ++;
+
+    }
 }
